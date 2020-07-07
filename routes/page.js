@@ -16,6 +16,7 @@ router.get('/join', isNotLoggedIn, (req, res) => {
   });
 });
 
+
 router.get('/', (req, res, next) => {
   Post.findAll({
     include: {
